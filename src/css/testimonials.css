@@ -63,6 +63,7 @@
 }
 .testimonials-item {
     width: calc((100% - 24px) / 2);
+    min-height: 253px;
     }
 
 .testimonials-title {
@@ -83,6 +84,7 @@
 
 .testimonials-item {
    width: calc((100% - 72px) / 4);
+   min-height: 303px;
 }
 
 .testimonials-title {
