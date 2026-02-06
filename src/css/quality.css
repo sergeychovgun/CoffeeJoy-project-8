@@ -82,7 +82,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1341px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .quality-card:last-child {
     width: 100%;
   }
