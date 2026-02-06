@@ -37,9 +37,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  /* на видалення  */
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .quality-img-thumb {
@@ -71,10 +68,6 @@
 /* ------------------------TABLET -------------------------*/
 
 @media screen and (min-width: 768px) {
-  /* на видалення */
-  .container {
-    padding: 0 32px;
-  }
   .quality-title {
     max-width: 452px;
     margin-left: auto;
@@ -106,12 +99,6 @@
 
 /* ------------------------DESKTOP -------------------------*/
 @media screen and (min-width: 1440px) {
-  /* на видалення */
-  .container {
-    max-width: 1440;
-    padding: 0 64px;
-  }
-
   .quality-title {
     max-width: 768px;
     font-size: 48px;
