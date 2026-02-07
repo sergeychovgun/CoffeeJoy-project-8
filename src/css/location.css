@@ -1,0 +1,177 @@
+/*Location section styles*/
+
+.location{
+    padding: 64px 0px;
+    background-color: #e0cbb4;
+  color: #0b0803;
+  font-family: "Quicksand", sans-serif;
+}
+
+.location-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.location-subtitle{
+font-weight: 600;
+font-size: 16px;
+line-height: 1.5;
+
+margin-bottom: 16px;
+color: #0b0803;
+}
+
+.location-title{
+font-family: "Aboreto", sans-serif;
+font-size: 36px;
+line-height: 1.2;
+letter-spacing: -0.01em;
+
+margin-bottom: 24px;
+color: #0b0803;
+}
+
+.location-text{
+font-size: 18px;
+line-height: 1.5;
+
+margin-bottom: 40px;
+color: #0b0803;
+}
+
+.location-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+.email-item, .phone-item, .map-item {
+    fill: #0b0803;
+}
+
+.location-label {
+    font-family: "Aboreto", sans-serif;
+font-weight: 400;
+font-size: 20px;
+line-height: 1.4;
+letter-spacing: -0.01em;
+
+margin-top: 16px;
+margin-bottom: 8px;
+
+color: #0b0803;
+}
+
+.location-link {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+text-decoration: underline;
+text-decoration-skip-ink: none;
+}
+
+.location-address{
+    font-style: normal;
+    margin-bottom: 16px;
+}
+
+.location-directions{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+
+display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.location-directions svg{
+    display: block;
+    flex-shrink: 0;
+    transform: translateY(1px);
+}
+
+.location-map{
+    width: 288px;
+    height: 307px;
+    margin: 0 auto;
+    border-radius: 40px;
+    overflow: hidden;
+
+}
+.location-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.location a{
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.location a:hover,
+.location a:focus-visible {
+    opacity: 0.5;
+}
+
+.location a:active {
+    opacity: 0.7;
+}
+
+.location a.is-inactive{
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+@media screen and (min-width: 768px) {
+    .location-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+    .location-map{
+        width: 100%;
+        height: 377px;
+    }
+
+}
+
+@media  screen and (min-width: 1440px) {
+
+.location-container{
+    flex-direction: row;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+
+    .location .container{
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+
+    .location-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+     
+.location-map{
+    width: 869px;
+    height: 697px;
+
+}
+    
+}
