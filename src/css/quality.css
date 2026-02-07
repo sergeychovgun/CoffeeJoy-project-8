@@ -1,0 +1,127 @@
+.quality-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #e0cbb4;
+}
+
+.quality-container {
+  text-align: center;
+}
+
+.quality-tag {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0b0803;
+}
+
+.quality-title {
+  margin-bottom: 24px;
+  font-family: 'Aboreto', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #0b0803;
+}
+
+.quality-text {
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #0b0803;
+}
+
+.quality-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.quality-img-thumb {
+  overflow: hidden;
+  width: 100%;
+  height: 164px;
+  border-radius: 32px;
+  background-color: #6f4e37;
+}
+
+.quality-card-wrapper {
+  padding-top: 32px;
+}
+
+.quality-card-title {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #0b0803;
+}
+
+.quality-card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0b0803;
+}
+
+/* ------------------------TABLET -------------------------*/
+
+@media screen and (min-width: 768px) {
+  .quality-title {
+    max-width: 452px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .quality-card {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .quality-img-thumb {
+    height: 194px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .quality-card:last-child {
+    width: 100%;
+  }
+
+  .quality-card:last-child .quality-img-thumb {
+    height: 401px;
+  }
+
+  .quality-card:last-child .quality-card-text {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+}
+
+/* ------------------------DESKTOP -------------------------*/
+@media screen and (min-width: 1440px) {
+  .quality-title {
+    max-width: 768px;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #0b0803;
+  }
+
+  .quality-text {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .quality-list {
+    flex-wrap: nowrap;
+  }
+
+  .quality-card {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .quality-img-thumb {
+    height: 240px;
+  }
+}
