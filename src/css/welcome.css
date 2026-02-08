@@ -33,40 +33,63 @@
     margin-bottom: 32px;
     border-radius: 100px;
     padding: 10px 77.5px;
-    width: 288px;
-    height: 44px;
+    width: auto;
+    min-height: 44px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     color: #fff;
     fill: #fff;
+    opacity: 1;
     background-color: #6f4e37;
     box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: none;
+    transition: box-shadow 150ms ease, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.welcome-picture-container {
-    border-radius: 40px;
-    overflow: hidden;
 
+.location-button:hover,
+.location-button:focus-visible {
+    opacity: 0.5;
 }
-/* .location-button:hover,
-.location-button:focus {
-    background-color: #31d0aa;
-} */
+
+.location-button:active {
+    opacity: 1;
+    box-shadow: none;
+ }
+.welcome-picture-container {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 40px;
+}
+.welcome-img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
 @media screen and (min-width: 768px) {
 
-    .welcome-container {
-        padding: 64px 32px;
+.welcome-container {
+    padding: 64px 32px;
     }
-
+.welcome-title-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+.welcome-title-item {
+    width: calc((100% - 32px) / 2);
+}
+
+.location-button {
+    padding: 10px 24px;
+}
+}
+
 @media screen and (min-width: 1440px) {
 
-    .welcome-container {
-        padding: 64px 64px;
-      
-    }
-
+.welcome-container {
+    padding: 64px 64px;   
+}
 }
