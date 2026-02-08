@@ -1,5 +1,5 @@
 .coffee {
-    background: #e7d6c4;
+    background: #e0cbb4;
     padding: 32px 0;
 }
 
@@ -38,7 +38,7 @@
     width: 100%;
     border-radius: 18px;
     overflow: hidden;
-    background: #e7d6c4;
+    background: #e0cbb4;
 }
 
 .card {

@@ -1,0 +1,61 @@
+.header {
+  background: #e0cbb4;
+  padding: 18px 16px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo-icon {
+  width: 84px;
+height: 36px;
+  fill: #1a1a1a;
+}
+
+
+.header-burger {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.header-burger-icon {
+  width: 32px;
+  height: 32px;
+  fill: #1a1a1a;
+}
+
+
+.header-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 24px 40px;
+  }
+
+  .header-burger {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+    gap: 32px;
+  }
+
+  .header-nav a {
+    text-decoration: none;
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: #0b0803;
+  }
+}
+.header-nav a:hover, .header-nav a:focus {
+   opacity: 0.5;
+}
+
