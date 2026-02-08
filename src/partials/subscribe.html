@@ -1,0 +1,50 @@
+<section class="coffee-section">
+  <div class="coffee-content">
+    <h2 class="coffee-title">Join Our Coffee Community</h2>
+    <p class="coffee-subtitle">
+      Experience the joy of coffee delivered right to your door. Sign up today!
+    </p>
+    <form class="subscribe-form">
+      <label class="coffee-label">
+        <input
+          class="coffee-input"
+          type="email"
+          id="user-email"
+          name="subscribe"
+          placeholder="Your Email Here"
+          required
+        />
+      </label>
+      <button class="coffee-button" type="submit">
+        Subscribe
+        <svg class="coffee-svg" width="24" height="24">
+          <use href="/img/icon/icons.svg#icon-chevrons-right-icon"></use>
+        </svg>
+      </button>
+    </form>
+    <p class="coffee-terms">
+      By clicking Get Started, you agree to our Terms and Conditions.
+    </p>
+  </div>
+  <div class="coffee-image">
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /img/subscribe/office-1x.jpg 1x,
+          /img/subscribe/office-2x.jpg 2x
+        "
+      />
+      <img
+        src="/img/subscribe/office-mobile-1x.jpg"
+        srcset="
+          /img/subscribe/office-mobile-1x.jpg 1x,
+          /img/subscribe/office-mobile-2x.jpg 2x
+        "
+        width="288"
+        height="400"
+        alt="Coffee community"
+      />
+    </picture>
+  </div>
+</section>
