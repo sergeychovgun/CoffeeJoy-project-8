@@ -18,26 +18,35 @@
     />
 
     <script type="module" crossorigin src="/CoffeeJoy-project-8/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/CoffeeJoy-project-8/assets/index-CBRmlxCx.css">
+    <link rel="stylesheet" crossorigin href="/CoffeeJoy-project-8/assets/index-cEqEGFVk.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
+  <div class="container header-container">
+
+    
+    <a href="#" class="header-logo">
+      <svg class="header-logo-icon">
+        <use href="/CoffeeJoy-project-8/assets/icons-BIhgCwx0.svg#icon-logo"></use>
+      </svg>
+    </a>
+
+   
+    <button class="header-burger" aria-label="Open menu">
+      <svg class="header-burger-icon">
+        <use href="/CoffeeJoy-project-8/assets/icons-BIhgCwx0.svg#icon-burger-icon"></use>
+      </svg>
+    </button>
+
+   
+    <nav class="header-nav">
+      <a href="#">About us</a>
+      <a href="#link-quality">Benefits</a>
+      <a href="#link-gallery">Gallery</a>
+      <a href="#link-testimonials">Testimonial</a>
+      <a href="#link-location">Location</a>
     </nav>
+
   </div>
 </header>
 
@@ -45,7 +54,7 @@
     <main>
       
       
-      <section class="quality-section">
+      <section class="quality-section"  id="link-quality">
   <div class="container quality-container">
     <p class="quality-tag">Quality</p>
     <h2 class="quality-title">Why CoffeeJoy Stands Out from the Rest</h2>
@@ -113,7 +122,7 @@
   </div>
 </section>
 
-      <section class="coffee">
+      <section class="coffee"  id="link-gallery">
   <div class="coffee_container">
     <h2 class="coffee_title">COFFEE MOMENTS</h2>
     <p>Experience the warmth and community of CoffeeJoy.</p>
@@ -213,7 +222,7 @@
   </div>
 </section>
 
-      <section class="testimonials container">
+      <section class="testimonials container"  id="link-testimonials">
     <h2 class="testimonials-title">What our visitors say</h2>
     <ul class="testimonials-list">
         <li class="testimonials-item">
@@ -502,7 +511,7 @@
     </ul>
 
 </section>
-      <section class="location">
+      <section class="location" id="link-location">
 <div class="container location-container">
     <div class="location-content">
     <p class="location-subtitle">Find</p>
@@ -567,34 +576,34 @@
     </main>
 
     <footer class="footer">
-  <div class="container footer__container">
-    <div class="footer__box">
+  <div class="container footer-container">
+    <div class="footer-box">
 
-      <div class="footer__left">
-        <a href="#" class="footer__logo">
-          <svg class="footer__logo-icon">
+      <div class="footer-left">
+        <a href="#" class="footer-logo">
+          <svg class="footer-logo-icon">
             <use href="/CoffeeJoy-project-8/assets/icons-BIhgCwx0.svg#icon-logo"></use>
           </svg>
         </a>
         
-        <ul class="footer__socials">
-          <li><a href="#"><svg class="footer__icon"><use href="/CoffeeJoy-project-8/assets/icons-BIhgCwx0.svg#icon-facebook-icon"></use></svg></a></li>
-          <li><a href="#"><svg class="footer__icon"><use href="/CoffeeJoy-project-8/assets/icons-BIhgCwx0.svg#icon-insta-icon"></use></svg></a></li>
-          <li><a href="#"><svg class="footer__icon"><use href="/CoffeeJoy-project-8/assets/icons-BIhgCwx0.svg#icon-Twitter-icon"></use></svg></a></li>
+        <ul class="footer-socials">
+          <li><a href="#"><svg class="footer-icon"><use href="/CoffeeJoy-project-8/assets/icons-BIhgCwx0.svg#icon-facebook-icon"></use></svg></a></li>
+          <li><a href="#"><svg class="footer-icon"><use href="/CoffeeJoy-project-8/assets/icons-BIhgCwx0.svg#icon-insta-icon"></use></svg></a></li>
+          <li><a href="#"><svg class="footer-icon"><use href="/CoffeeJoy-project-8/assets/icons-BIhgCwx0.svg#icon-Twitter-icon"></use></svg></a></li>
         </ul>
       </div>
 
-      <nav class="footer__nav">
+      <nav class="footer-nav">
         <a href="#">About us</a>
-        <a href="#">Benefits</a>
-        <a href="#">Gallery</a>
-        <a href="#">Testimonial</a>
-        <a href="#">Location</a>
+        <a href="#link-quality">Benefits</a>
+        <a href="#link-gallery">Gallery</a>
+        <a href="#link-testimonials">Testimonial</a>
+        <a href="#link-location">Location</a>
       </nav>
 
     </div>
 
-    <p class="footer__copy">&#169; 2025 CoffeeJoy. All rights reserved.</p>
+    <p class="footer-copy">&#169; 2025 CoffeeJoy. All rights reserved.</p>
   </div>
 </footer>
 
