@@ -1,13 +1,10 @@
-
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   line-height: 1.5;
   color: #000;
-  background-color: #fff;
+  background-color: #e0cbb4;
 }
-
-
 
 img {
   display: block;
@@ -24,7 +21,7 @@ ul,
 ol {
   list-style: none;
   padding-left: 0;
-}
+ }
 
 button {
   font-family: inherit;

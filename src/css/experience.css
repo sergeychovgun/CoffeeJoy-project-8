@@ -1,0 +1,149 @@
+.coffee {
+    background: #e0cbb4;
+    padding: 32px 0;
+}
+
+.coffee_container {
+    max-width: 1158px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.coffee_title {
+    text-align: center;
+    margin: 0 0 20px;
+    letter-spacing: 0.08em;
+}
+
+.coffee_container>p {
+    text-align: center;
+    margin: 0 0 20px;
+    opacity: 0.8;
+}
+
+.coffee_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.coffee_col {
+    display: contents;
+}
+
+.card {
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #e0cbb4;
+}
+
+.card {
+    aspect-ratio: 1 / 1;
+}
+
+.card--sm {
+    aspect-ratio: 416 / 234;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .coffee_grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        grid-template-areas:
+            "a b"
+            "c d"
+            "e f"
+            "g g";
+    }
+    .card--a {
+        grid-area: a;
+    }
+
+    .card--b {
+        grid-area: b;
+    }
+
+    .card--c {
+        grid-area: c;
+    }
+
+    .card--d {
+        grid-area: d;
+    }
+
+    .card--e {
+        grid-area: e;
+    }
+
+    .card--f {
+        grid-area: f;
+    }
+
+    .card--g {
+        grid-area: g;
+        grid-column: 1 / -1;
+        aspect-ratio: 16 / 9;
+    }
+
+    .card:not(.card--g):not(.card--sm) {
+        aspect-ratio: 1 / 1;
+    }
+
+    .card--sm {
+        aspect-ratio: 416 / 234;
+    }
+        .card--g img {
+            object-fit: cover;
+            object-position: 50% 60%;
+            /* трохи вниз, щоб обрізало як треба */
+        }
+}
+
+@media (min-width: 1440px) {
+    .coffee_container {
+        max-width: 1292px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .coffee_grid {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .coffee_col {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        width: 416px;
+        height: 416px;
+        aspect-ratio: auto;
+    }
+
+    .card--sm {
+        height: 234px;
+    }
+
+    .card img {
+        object-fit: cover;
+    }
+}
