@@ -5,7 +5,7 @@
   color: #1a1a1a;
 }
 
-.footer__box {
+.footer-box {
   background: #c29d84;
   border-radius: 40px;
   padding: 40px 20px;
@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-.footer__logo-icon {
+.footer-logo-icon {
   width: 196px;
 height: 84px;
   display: block;
@@ -25,7 +25,7 @@ height: 84px;
 }
 
 
-.footer__socials {
+.footer-socials {
   display: flex;
   gap: 32px;
   list-style: none;
@@ -33,20 +33,18 @@ height: 84px;
   margin: 0;
 }
 
-.footer__icon {
+.footer-icon {
   width: 28px;
   height: 28px;
   fill: #1a1a1a;
 }
-
-
-.footer__nav {
+.footer-nav {
   display: flex;
   flex-direction: column;
   gap: 22px;
 }
 
-.footer__nav a {
+.footer-nav a {
   text-decoration: none;
   color: inherit;
   font-size: 20px;
@@ -54,11 +52,11 @@ height: 84px;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__nav a:hover, .footer__nav a:focus {
+.footer-nav a:hover, .footer-nav a:focus {
    opacity: 0.5;
 }
 
-.footer__copy {
+.footer-copy {
   text-align: center;
   margin-top: 30px;
     font-weight: 400;
@@ -68,30 +66,30 @@ color: #0b0803;
 }
 
 @media (min-width: 768px) {
-  .footer__box {
+  .footer-box {
     border-radius: 50px;
     gap: 30px;
   }
 
-  .footer__logo-icon {
+  .footer-logo-icon {
     width: 84px;
 height: 36px;
   }
 
-  .footer__nav {
+  .footer-nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
   }
 
-  .footer__nav a {
+  .footer-nav a {
     font-size: 18px;
   }
 }
 
 @media (min-width: 1440px) {
-  .footer__box {
+  .footer-box {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -101,27 +99,27 @@ height: 36px;
     border-radius: 60px;
   }
 
-  .footer__logo-icon {
+  .footer-logo-icon {
     width: 84px;
 height: 36px;
   }
  
-  .footer__nav {
+  .footer-nav {
     gap: 40px;
   }
 
-  .footer__copy {
+  .footer-copy {
     font-size: 16px;
     margin-top: 25px;
   }
 }
 
-.footer__left {
+.footer-left {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
-.footer__socials {
+.footer-socials {
   gap: 12px;
 }
