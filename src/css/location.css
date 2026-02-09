@@ -171,7 +171,14 @@ display: inline-flex;
 .location-map{
     width: 869px;
     height: 697px;
+    margin: 0;
+    margin-left: auto;
 
 }
+
+.location-content {
+    width: 507px;
+    flex-shrink: 0;
+  }
     
 }
