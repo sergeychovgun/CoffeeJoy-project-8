@@ -1,6 +1,7 @@
 /* ------------------------ welcome------------------------------- */
-.welcome-container {
-    padding: 64px 16px;
+
+.welcome-section {
+    padding: 64px 0px;
     background: #e0cbb4;
 }
 .welcome-tag {
@@ -23,6 +24,9 @@
     flex-direction: column;
     gap: 32px;
     margin-bottom: 32px;
+}
+.welcome-title-item {
+    flex: 1;
 }
 
 .welcome-text {
@@ -74,22 +78,12 @@
 
 @media screen and (min-width: 768px) {
 
-.welcome-container {
-    padding: 64px 32px;
-    }
 .welcome-title-wrapper {
     flex-direction: row;
-    justify-content: space-between;
+    gap: 32px;
 }
 
 .location-button {
     padding: 10px 24px;
-}
-}
-
-@media screen and (min-width: 1440px) {
-
-.welcome-container {
-    padding: 64px 64px;   
 }
 }
