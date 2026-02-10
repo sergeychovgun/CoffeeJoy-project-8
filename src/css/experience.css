@@ -13,6 +13,8 @@
     text-align: center;
     margin: 0 0 20px;
     letter-spacing: 0.08em;
+    font-family: Aboreto;
+    font-size: 48px;
 }
 
 .coffee_container>p {
