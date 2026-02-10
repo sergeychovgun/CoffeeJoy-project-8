@@ -1,6 +1,6 @@
 .footer {
   background: #b58869;
-  padding: 40px 16px 20px;
+  padding: 40px 0px 20px;
   font-family: "Quicksand", sans-serif;
   color: #1a1a1a;
 }
@@ -118,6 +118,7 @@ height: 36px;
   display: flex;
   align-items: center;
   gap: 40px;
+  flex-direction: column;
 }
 
 .footer-socials {
