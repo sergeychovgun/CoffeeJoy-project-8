@@ -118,7 +118,7 @@ height: 36px;
   display: flex;
   align-items: center;
   gap: 40px;
-  flex-direction: column;
+  
 }
 
 .footer-socials {
