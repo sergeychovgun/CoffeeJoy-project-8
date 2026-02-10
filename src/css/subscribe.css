@@ -53,8 +53,9 @@
     outline: none;
 }
 
-.coffee-input:focus, .coffee-input:hover {
+.coffee-input:hover, .coffee-input:focus {
     color: #0b0803;
+    opacity: 0.5;
 }
 
 .coffee-input::placeholder {
